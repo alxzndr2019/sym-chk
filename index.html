@@ -14,8 +14,11 @@
 
 <body>
   <script>
+  const yob ="";
+  const gender ="";
+  const symptoms= "";
   const token= "";
-  fetch(`https://healthservice.priaid.ch/diagnosis?token=${token}&language=en-gb&symptoms=[233]&gender=male&year_of_birth=1988`)
+  fetch(`https://healthservice.priaid.ch/diagnosis?token=${token}&language=en-gb&symptoms=${symptoms}&gender=${gender}&year_of_birth=${yob}`)
   .then((resp) => resp.json()) // Transform the data into json
   .then(console.log(data) {
     // Create and append the li's to the ul
